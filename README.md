@@ -1,2 +1,2 @@
 # node-testiing-template
-a simple template to help with practicing testing node application
+a simple template to help practice testing node application
