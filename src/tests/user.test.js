@@ -15,13 +15,18 @@ test("get lits of users", async () => {
 });
 
 
-test('it should not be more than 0', async () => {
+test('it should not be more than 1', async () => {
 
     const users = await User.find({})
-    expect(users.length).toBeGreaterThan(0)
+    expect(users.length).toBeGreaterThan(1)
 
 
 });
+
+afterAll(async () => {
+
+    await User.deleteMany({})
+})
 
 test("first user should be lebron", async () => {
 
