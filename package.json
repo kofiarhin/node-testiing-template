@@ -1,0 +1,24 @@
+{
+  "name": "test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "env-cmd -f ./config/test.env jest --watchAll",
+    "start": "env-cmd -f ./config/dev.env nodemon src/server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.0.0",
+    "env-cmd": "^10.1.0",
+    "express": "^4.17.1",
+    "jest": "^26.4.2",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.10.5"
+  },
+  "jest": {
+    "testEnvironment": "node"
+  }
+}
